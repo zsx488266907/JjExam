@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SearchActivity">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="0dp">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher_background"
+
+        />
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="50dp"
+        android:hint="请输入你想搜索的内容"
+        />
+    <Button
+        android:id="@+id/button1"
+        android:text="搜索"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+
+        />
+</LinearLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xrv"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:layout_height="0dp"/>
+</LinearLayout>
